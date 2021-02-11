@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import  charactersReducer  from '../features/characters/charactersSlice.js';
+import moviesReducer from '../features/characters/moviesSlice.js';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
-  },
+    characters: charactersReducer,
+    movies: moviesReducer,
+  }
 });
